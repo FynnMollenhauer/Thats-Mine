@@ -48,7 +48,7 @@ public class IdleState : PlayerState
     {
         base.OnEnter(player);
 
-        player.animator.SetBool("IsMoving", false);
+        player.animator.SetFloat("Forward", 0);
         player.animator.SetBool("IsJumping", false);
     }
 
@@ -83,12 +83,11 @@ public class WalkState : PlayerState
     {
         base.OnEnter(player);
 
-        player.animator.SetBool("IsMoving", true);
+        player.animator.SetFloat("Forward", 1);
     }
 
     public override void OnExit(PlayerController player)
     {
-        player.animator.SetBool("IsMoving", false);
     }
 }
 
