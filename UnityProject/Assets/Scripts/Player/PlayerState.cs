@@ -113,6 +113,7 @@ public class JumpState : PlayerState
 
         player.animator.SetBool("IsJumping", true);
 
+        player.body.velocity = Vector3.zero;
         player.body.AddForce(Vector3.up * player.jumpHeight, ForceMode.Impulse);
     }
 
