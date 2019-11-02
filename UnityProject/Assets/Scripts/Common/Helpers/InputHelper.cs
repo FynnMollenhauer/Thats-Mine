@@ -14,7 +14,7 @@ public static class InputHelper
 
     public static bool JumpPressed()
     {
-        return Input.GetAxis("Jump") > 0;
+        return Input.GetButtonDown("Jump");
     }
 }
 
