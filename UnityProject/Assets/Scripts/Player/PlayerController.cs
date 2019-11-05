@@ -13,30 +13,45 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Rigidbody body;
 
-    private PlayerState currentState;
+    private PlayerState movementState;
+    private PlayerState upperBodyState;
+
+    private Throwable throwable;
 
     // Start is called before the first frame update
     private void Start()
     {
-        ChangeState(PlayerState.GetStateObject<IdleState>());
-
+        ChangeMovementState(PlayerState.GetStateObject<IdleState>());
+        ChangeUpperBodyState(PlayerState.GetStateObject<UnequipedState>());
     }
 
     private void Update()
     {
-        currentState.Update(this);
+        movementState.Update(this);
+        upperBodyState.Update(this);
     }
 
-    public void ChangeState(PlayerState state)
+    #region Movements
+    public void ChangeMovementState(PlayerState state)
     {
-        if (state == null)
+        ChangeState(ref movementState, state);
+    }
+
+    public void ChangeUpperBodyState(PlayerState state)
+    {
+        ChangeState(ref upperBodyState, state);
+    }
+
+    private void ChangeState(ref PlayerState stateObject, PlayerState newState)
+    {
+        if (newState == null)
             return;
 
-        if (currentState != null)
-            currentState.OnExit(this);
+        if (stateObject != null)
+            stateObject.OnExit(this);
 
-        currentState = state;
-        currentState.OnEnter(this);
+        stateObject = newState;
+        stateObject.OnEnter(this);
     }
 
     public void MovePlayer(float movement)
@@ -58,9 +73,6 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.position += forward * movementSpeed * Time.deltaTime;
-
-        //if (movement != 0)
-        //    spriteRenderer.flipX = movement < 0;
     }
 
     IEnumerator rotateCoroutine = null;
@@ -75,4 +87,16 @@ public class PlayerController : MonoBehaviour
         transform.forward = forward;
         OnFinish();
     }
+    #endregion
+
+    #region Pickup and throw
+    public void Pickup(Throwable throwable)
+    {
+    }
+
+    public void Throw()
+    {
+    }
+    #endregion
 }
+

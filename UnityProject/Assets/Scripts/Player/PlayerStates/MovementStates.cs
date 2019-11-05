@@ -1,31 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-public interface IPlayerState
-{
-    void OnEnter(PlayerController player);
-    void OnExit(PlayerController player);
-    void Update(PlayerController player);
-}
-
-public abstract class PlayerState : IPlayerState
-{
-    public virtual void OnEnter(PlayerController player)
-    {
-#if STATE_MACHINE_DEBUG
-        Debug.Log("[PlayerState] OnEnter " + this.ToString());
-#endif
-    }
-
-    public abstract void OnExit(PlayerController player);
-    public abstract void Update(PlayerController player);
-
-
-    public static T GetStateObject<T>() where T : PlayerState, new()
-    {
-        return new T();
-    }
-}
-
 
 public class IdleState : PlayerState
 {
@@ -33,13 +6,13 @@ public class IdleState : PlayerState
     {
         if (InputHelper.IsMoving())
         {
-            player.ChangeState(GetStateObject<WalkState>());
+            player.ChangeMovementState(GetStateObject<WalkState>());
             return;
         }
 
         if (InputHelper.JumpPressed())
         {
-            player.ChangeState(GetStateObject<JumpState>());
+            player.ChangeMovementState(GetStateObject<JumpState>());
             return;
         }
     }
@@ -65,13 +38,13 @@ public class WalkState : PlayerState
     {
         if (!InputHelper.IsMoving())
         {
-            player.ChangeState(GetStateObject<IdleState>());
+            player.ChangeMovementState(GetStateObject<IdleState>());
             return;
         }
 
         if (InputHelper.JumpPressed())
         {
-            player.ChangeState(GetStateObject<JumpState>());
+            player.ChangeMovementState(GetStateObject<JumpState>());
             return;
         }
 
@@ -101,7 +74,7 @@ public class JumpState : PlayerState
 
         if (player.body.velocity.sqrMagnitude == 0)
         {
-            player.ChangeState(GetStateObject<IdleState>());
+            player.ChangeMovementState(GetStateObject<IdleState>());
             return;
         }
     }
