@@ -17,9 +17,24 @@ public abstract class PlayerState : IPlayerState
     public abstract void OnExit(PlayerController player);
     public abstract void Update(PlayerController player);
 
+    private static PlayerState[] precachedStates = new PlayerState[]
+    {
+        new IdleState(),
+        new WalkState(),
+        new JumpState(),
+
+        new UnequipedState(),
+        new PickupState()
+    };
 
     public static T GetStateObject<T>() where T : PlayerState, new()
     {
-        return new T();
+        foreach (var s in precachedStates)
+        {
+            if (s is T)
+                return (T)s;
+        }
+
+        throw new System.NullReferenceException("No cached object of type " + typeof(T));
     }
 }

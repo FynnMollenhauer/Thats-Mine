@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 5;
     public float rotateRate = 30;
     public float throwableDetectionRadius = 2;
+    public float throwingForce = 10;
+    [Range(0, 60)] public float throwingAngle = 0;
 
     [Header("Joints")]
     [SerializeField] private Transform throwingHandJoint;
@@ -20,7 +22,8 @@ public class PlayerController : MonoBehaviour
     private PlayerState movementState;
     private PlayerState upperBodyState;
 
-    private GameObject throwable;
+    private GameObject nearbyThrowable;
+    private GameObject holdingThrowable;
 
     // Start is called before the first frame update
     private void Start()
@@ -81,6 +84,14 @@ public class PlayerController : MonoBehaviour
         transform.position += forward * movementSpeed * Time.deltaTime;
     }
 
+    private bool IsFacingRight
+    {
+        get
+        {
+            return Vector3.Dot(Vector3.right, transform.forward) > 0;
+        }
+    }
+
     IEnumerator rotateCoroutine = null;
     private IEnumerator RotateTo(Vector3 forward, System.Action OnFinish)
     {
@@ -98,28 +109,64 @@ public class PlayerController : MonoBehaviour
     #region Pickup and throw
     private void DetectThrowable()
     {
-        throwable = null;
+        // Already holding something
+        if (holdingThrowable != null)
+        {
+            return;
+        }
 
         Collider[] cols = Physics.OverlapSphere(transform.position, throwableDetectionRadius, LayerMask.GetMask("Throwable"));
         if (cols.Length > 0)
         {
-            throwable = cols[0].gameObject;
+            nearbyThrowable = cols[0].gameObject;
+        }
+        else
+        {
+            nearbyThrowable = null;
         }
     }
 
-    public void Pickup()
+    public bool Pickup()
     {
-        if (throwable != null)
+        if (nearbyThrowable == null)
         {
-            throwable.transform.SetParent(throwingHandJoint);
-            throwable.transform.localPosition = Vector3.zero;
-            throwable.GetComponent<Collider>().enabled = false;
-            throwable.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            return false;
         }
+
+        holdingThrowable = nearbyThrowable;
+
+        holdingThrowable.transform.SetParent(throwingHandJoint);
+        holdingThrowable.transform.localPosition = Vector3.zero;
+        holdingThrowable.GetComponent<Collider>().enabled = false;
+        holdingThrowable.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+
+        return true;
     }
 
     public void Throw()
     {
+        if (holdingThrowable != null)
+        {
+            holdingThrowable.transform.SetParent(null);
+            holdingThrowable.GetComponent<Collider>().enabled = true;
+
+            Rigidbody body = holdingThrowable.GetComponent<Rigidbody>();
+            body.constraints = RigidbodyConstraints.FreezePositionZ;
+
+            Vector3 facingDirection = Vector3.right;
+            Vector3 rightDirection = Vector3.forward;
+            if (!IsFacingRight)
+            {
+                facingDirection = -Vector3.right;
+                rightDirection = -Vector3.forward;
+            }
+
+            Vector3 throwingDirection = Quaternion.AngleAxis(throwingAngle, rightDirection) * facingDirection;
+
+            body.AddForce(throwingDirection * throwingForce, ForceMode.Impulse);
+
+            holdingThrowable = null;
+        }
     }
 
     public void Drop()

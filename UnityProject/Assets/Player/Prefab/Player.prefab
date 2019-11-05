@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6196429467716382722}
   - component: {fileID: 3666690166980557188}
   - component: {fileID: 905161141328136624}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,6 +80,8 @@ MonoBehaviour:
   jumpHeight: 2.5
   rotateRate: 450
   throwableDetectionRadius: 1
+  throwingForce: 10
+  throwingAngle: 45
   throwingHandJoint: {fileID: 1088738364889919656}
   animator: {fileID: 8621137291815951025}
   body: {fileID: 6196429467716382722}
