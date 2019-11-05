@@ -219,26 +219,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 905161141328136624, guid: edd71cf35b322ce459f60f65c9b54e48,
-        type: 3}
-      propertyPath: groundCheck
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 905161141328136624, guid: edd71cf35b322ce459f60f65c9b54e48,
-        type: 3}
-      propertyPath: jumpHeight
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 905161141328136624, guid: edd71cf35b322ce459f60f65c9b54e48,
-        type: 3}
-      propertyPath: rotateRate
-      value: 450
-      objectReference: {fileID: 0}
-    - target: {fileID: 8621137291815951025, guid: edd71cf35b322ce459f60f65c9b54e48,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edd71cf35b322ce459f60f65c9b54e48, type: 3}
 --- !u!4 &772755468 stripped
@@ -344,8 +324,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 772755468}
-  safeHorizontalZone: 0.3
-  safeVerticalZone: 0.3
+  safeHorizontalZone: 0.1
+  safeVerticalZone: 0.4
   followRate: 3
   slowDownRate: 10
 --- !u!1 &1463644419

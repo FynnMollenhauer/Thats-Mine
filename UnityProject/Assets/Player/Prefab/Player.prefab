@@ -77,8 +77,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
-  jumpHeight: 5
-  rotateRate: 720
+  jumpHeight: 2.5
+  rotateRate: 450
   animator: {fileID: 8621137291815951025}
   body: {fileID: 6196429467716382722}
 --- !u!1001 &6653181966061214929
@@ -93,11 +93,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Model
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 8a217ac77912a2448a47b5539de82c89,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 20cd87a9675ede44f8c97e24eef29a1f, type: 2}
     - target: {fileID: -4216859302048453862, guid: 8a217ac77912a2448a47b5539de82c89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -152,6 +147,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 8a217ac77912a2448a47b5539de82c89,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 20cd87a9675ede44f8c97e24eef29a1f, type: 2}
+    - target: {fileID: -6057140222963153312, guid: 8a217ac77912a2448a47b5539de82c89,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a217ac77912a2448a47b5539de82c89, type: 3}
