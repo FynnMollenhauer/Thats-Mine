@@ -224,6 +224,16 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 905161141328136624, guid: edd71cf35b322ce459f60f65c9b54e48,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 905161141328136624, guid: edd71cf35b322ce459f60f65c9b54e48,
+        type: 3}
+      propertyPath: rotateRate
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 8621137291815951025, guid: edd71cf35b322ce459f60f65c9b54e48,
         type: 3}
       propertyPath: m_ApplyRootMotion
@@ -337,7 +347,7 @@ MonoBehaviour:
   safeHorizontalZone: 0.3
   safeVerticalZone: 0.3
   followRate: 3
-  slowDownRate: 2
+  slowDownRate: 10
 --- !u!1 &1463644419
 GameObject:
   m_ObjectHideFlags: 0
