@@ -79,6 +79,8 @@ MonoBehaviour:
   movementSpeed: 3
   jumpHeight: 2.5
   rotateRate: 450
+  throwableDetectionRadius: 1
+  throwingHandJoint: {fileID: 1088738364889919656}
   animator: {fileID: 8621137291815951025}
   body: {fileID: 6196429467716382722}
 --- !u!1001 &6653181966061214929
@@ -169,6 +171,12 @@ Transform:
 --- !u!95 &8621137291815951025 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 8a217ac77912a2448a47b5539de82c89,
+    type: 3}
+  m_PrefabInstance: {fileID: 6653181966061214929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1088738364889919656 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3220319501169496967, guid: 8a217ac77912a2448a47b5539de82c89,
     type: 3}
   m_PrefabInstance: {fileID: 6653181966061214929}
   m_PrefabAsset: {fileID: 0}

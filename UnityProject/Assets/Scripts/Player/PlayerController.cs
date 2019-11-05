@@ -8,6 +8,10 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 5;
     public float jumpHeight = 5;
     public float rotateRate = 30;
+    public float throwableDetectionRadius = 2;
+
+    [Header("Joints")]
+    [SerializeField] private Transform throwingHandJoint;
 
     [Header("Components")]
     public Animator animator;
@@ -16,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private PlayerState movementState;
     private PlayerState upperBodyState;
 
-    private Throwable throwable;
+    private GameObject throwable;
 
     // Start is called before the first frame update
     private void Start()
@@ -27,6 +31,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        DetectThrowable();
+
         movementState.Update(this);
         upperBodyState.Update(this);
     }
@@ -90,11 +96,33 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Pickup and throw
-    public void Pickup(Throwable throwable)
+    private void DetectThrowable()
     {
+        throwable = null;
+
+        Collider[] cols = Physics.OverlapSphere(transform.position, throwableDetectionRadius, LayerMask.GetMask("Throwable"));
+        if (cols.Length > 0)
+        {
+            throwable = cols[0].gameObject;
+        }
+    }
+
+    public void Pickup()
+    {
+        if (throwable != null)
+        {
+            throwable.transform.SetParent(throwingHandJoint);
+            throwable.transform.localPosition = Vector3.zero;
+            throwable.GetComponent<Collider>().enabled = false;
+            throwable.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        }
     }
 
     public void Throw()
+    {
+    }
+
+    public void Drop()
     {
     }
     #endregion
