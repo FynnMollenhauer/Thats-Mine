@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Player attributes")]
-    public float movementSpeed = 5;
-    public float jumpHeight = 5;
-    public float rotateRate = 30;
-    public float throwableDetectionRadius = 2;
-    public float throwingForce = 10;
-    [Range(0, 60)] public float throwingAngle = 0;
+    public float movementSpeed = 4.0f;
+    public float jumpHeight = 2.5f;
+    public float rotateRate = 450.0f;
+    public float throwableDetectionRadius = 1.0f;
+    public float throwingForce = 8.5f;
+    [Range(0, 60)] public float throwingAngle = 30.0f;
 
     [Header("Joints")]
     [SerializeField] private Transform throwingHandJoint;

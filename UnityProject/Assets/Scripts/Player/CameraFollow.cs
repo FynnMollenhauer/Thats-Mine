@@ -6,10 +6,10 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] Transform target;
-    [SerializeField, Range(0, 1)] float safeHorizontalZone = 0.5f;
-    [SerializeField, Range(0, 1)] float safeVerticalZone = 0.5f;
-    [SerializeField] float followRate = 1;
-    [SerializeField] float slowDownRate = 1f;
+    [SerializeField, Range(0, 1)] float safeHorizontalZone = 0.05f;
+    [SerializeField, Range(0, 1)] float safeVerticalZone = 0.3f;
+    [SerializeField] float followRate = 4.0f;
+    [SerializeField] float slowDownRate = 20.0f;
 
     private Camera camera;
 
