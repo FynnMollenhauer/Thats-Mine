@@ -24,7 +24,7 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
     public void OnDrop()
     {
         col.isTrigger = false;
-        rb.constraints = RigidbodyConstraints.FreezeAll;
+        rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
     }
 
     public void OnPickUp()
