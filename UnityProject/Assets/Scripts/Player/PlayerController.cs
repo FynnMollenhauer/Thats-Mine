@@ -137,8 +137,7 @@ public class PlayerController : MonoBehaviour
 
         holdingThrowable.transform.SetParent(throwingHandJoint);
         holdingThrowable.transform.localPosition = Vector3.zero;
-        holdingThrowable.GetComponent<Collider>().enabled = false;
-        holdingThrowable.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        holdingThrowable.GetComponent<IThrowableTile>().OnPickUp();
 
         return true;
     }
@@ -148,10 +147,6 @@ public class PlayerController : MonoBehaviour
         if (holdingThrowable != null)
         {
             holdingThrowable.transform.SetParent(null);
-            holdingThrowable.GetComponent<Collider>().enabled = true;
-
-            Rigidbody body = holdingThrowable.GetComponent<Rigidbody>();
-            body.constraints = RigidbodyConstraints.FreezePositionZ;
 
             Vector3 facingDirection = Vector3.right;
             Vector3 rightDirection = Vector3.forward;
@@ -163,7 +158,7 @@ public class PlayerController : MonoBehaviour
 
             Vector3 throwingDirection = Quaternion.AngleAxis(throwingAngle, rightDirection) * facingDirection;
 
-            body.AddForce(throwingDirection * throwingForce, ForceMode.Impulse);
+            holdingThrowable.GetComponent<IThrowableTile>().OnThrow(throwingDirection, throwingForce);
 
             holdingThrowable = null;
         }
