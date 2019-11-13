@@ -91,7 +91,9 @@ public class PlayerController : MonoBehaviour
 
         // Check collision in the desired direction and stop if needed
         // to prevent weird physics problems
-        if (!Physics.Raycast(transform.position + Vector3.up, forward, wallStoppingDistance, wallLayer))
+        if (!Physics.Raycast(transform.position + 0 * Vector3.up, forward, wallStoppingDistance, wallLayer) &&
+            !Physics.Raycast(transform.position + 1 * Vector3.up, forward, wallStoppingDistance, wallLayer) &&
+            !Physics.Raycast(transform.position + 2 * Vector3.up, forward, wallStoppingDistance, wallLayer))
             transform.position += forward * movementSpeed * Time.deltaTime;
     }
 
