@@ -29974,11 +29974,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905161141328136624, guid: edd71cf35b322ce459f60f65c9b54e48,
         type: 3}
-      propertyPath: jumpHeight
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 905161141328136624, guid: edd71cf35b322ce459f60f65c9b54e48,
-        type: 3}
       propertyPath: movementSpeed
       value: 4
       objectReference: {fileID: 0}
