@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float throwableDetectionRadius = 1.0f;
     public float throwingForce = 8.5f;
     [Range(0, 60)] public float throwingAngle = 30.0f;
+    [Range(0, 1)] public float wallStoppingDistance = 0.5f;
 
     [Header("Joints")]
     [SerializeField] private Transform throwingHandJoint;
@@ -24,6 +25,13 @@ public class PlayerController : MonoBehaviour
 
     private GameObject nearbyThrowable;
     private GameObject holdingThrowable;
+
+    private int wallLayer;
+
+    private void Awake()
+    {
+        wallLayer = LayerMask.GetMask("Default", "Throwable");
+    }
 
     // Start is called before the first frame update
     private void Start()
@@ -81,7 +89,10 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(rotateCoroutine);
         }
 
-        transform.position += forward * movementSpeed * Time.deltaTime;
+        // Check collision in the desired direction and stop if needed
+        // to prevent weird physics problems
+        if (!Physics.Raycast(transform.position + Vector3.up, forward, wallStoppingDistance, wallLayer))
+            transform.position += forward * movementSpeed * Time.deltaTime;
     }
 
     private bool IsFacingRight
