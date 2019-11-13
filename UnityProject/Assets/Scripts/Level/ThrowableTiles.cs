@@ -21,6 +21,11 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
         OnDrop();
     }
 
+    private void FixedUpdate()
+    {
+        transform.rotation = Quaternion.identity;
+    }
+
     public void OnDrop()
     {
         col.isTrigger = false;
