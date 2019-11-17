@@ -179,6 +179,23 @@ public class PlayerController : MonoBehaviour
 
     public void Drop()
     {
+        if (holdingThrowable != null)
+        {
+            holdingThrowable.transform.SetParent(null);
+
+            Vector3 facingDirection = Vector3.right;
+            if (!IsFacingRight)
+            {
+                facingDirection = -Vector3.right;
+            }
+
+            holdingThrowable.transform.position = transform.position;
+            holdingThrowable.transform.position += facingDirection;
+
+            holdingThrowable.GetComponent<IThrowableTile>().OnDrop();
+
+            holdingThrowable = null;
+        }
     }
     #endregion
 }
