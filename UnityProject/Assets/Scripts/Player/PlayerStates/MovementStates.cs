@@ -72,7 +72,7 @@ public class JumpState : PlayerState
     {
         player.MovePlayer(InputHelper.GetMovement());
 
-        if (player.body.velocity.sqrMagnitude == 0)
+        if (player.body.velocity.magnitude < 0.05f)
         {
             player.ChangeMovementState(GetStateObject<IdleState>());
             return;

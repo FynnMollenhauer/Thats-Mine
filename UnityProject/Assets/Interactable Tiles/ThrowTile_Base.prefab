@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7721205487877974997}
   - component: {fileID: 7721205487877974996}
   - component: {fileID: 7721205487877974999}
+  - component: {fileID: 4123650598725429318}
   m_Layer: 9
   m_Name: ThrowTile_Base
   m_TagString: Untagged
@@ -108,3 +109,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &4123650598725429318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7721205487877974998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110f89cc4618d6741864d8ff14377269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -27,9 +27,15 @@ public class PickupState : PlayerState
 
     public override void Update(PlayerController player)
     {
-        if (Input.GetButtonDown("Use"))
+        if (Input.GetButtonDown("Fire1"))
         {
             player.Throw();
+            player.ChangeUpperBodyState(PlayerState.GetStateObject<UnequipedState>());
+        }
+
+        if (Input.GetButtonDown("Use"))
+        {
+            player.Drop();
             player.ChangeUpperBodyState(PlayerState.GetStateObject<UnequipedState>());
         }
     }
