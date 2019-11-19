@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Rigidbody body;
 
+    public GameObject marker;
+
     private PlayerState movementState;
     private PlayerState upperBodyState;
 
@@ -38,11 +40,14 @@ public class PlayerController : MonoBehaviour
     {
         ChangeMovementState(PlayerState.GetStateObject<IdleState>());
         ChangeUpperBodyState(PlayerState.GetStateObject<UnequipedState>());
+
+        marker.transform.SetParent(null);
     }
 
     private void Update()
     {
         DetectThrowable();
+        UpdateMarker();
 
         movementState.Update(this);
         upperBodyState.Update(this);
@@ -183,14 +188,7 @@ public class PlayerController : MonoBehaviour
         {
             holdingThrowable.transform.SetParent(null);
 
-            Vector3 facingDirection = Vector3.right;
-            if (!IsFacingRight)
-            {
-                facingDirection = -Vector3.right;
-            }
-
-            holdingThrowable.transform.position = transform.position;
-            holdingThrowable.transform.position += facingDirection;
+            holdingThrowable.transform.position = new Vector3(marker.transform.position.x, holdingThrowable.transform.position.y);
 
             holdingThrowable.GetComponent<IThrowableTile>().OnDrop();
 
@@ -198,5 +196,27 @@ public class PlayerController : MonoBehaviour
         }
     }
     #endregion
+
+    void UpdateMarker()
+    {
+        if (holdingThrowable == null)
+        {
+            marker.SetActive(false);
+            return;
+        }
+
+        marker.SetActive(true);
+
+        Vector3 position = transform.position;
+        if (IsFacingRight)
+        {
+            position.x = Mathf.Ceil(position.x) + 0.5f;
+        }
+        else
+        {
+            position.x = Mathf.Floor(position.x) - 0.5f;
+        }
+        marker.transform.position = position;
+    }
 }
 
