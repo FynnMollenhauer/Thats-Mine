@@ -84,7 +84,7 @@ MonoBehaviour:
   throwingForce: 8.5
   throwingAngle: 30
   wallStoppingDistance: 0.5
-  throwingHandJoint: {fileID: 89968108354063983}
+  throwingHandJoint: {fileID: 3899626799975217185}
   animator: {fileID: 7031697986635640788}
   body: {fileID: 6196429467716382722}
   marker: {fileID: 2349289266939467958}
@@ -251,9 +251,9 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 5360738344046307764}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &89968108354063983 stripped
+--- !u!4 &3899626799975217185 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -3793567335479187493, guid: 6af1856d3b5aa2b4aa8b475c2c5bca8a,
+  m_CorrespondingSourceObject: {fileID: 8969880690916037013, guid: 6af1856d3b5aa2b4aa8b475c2c5bca8a,
     type: 3}
   m_PrefabInstance: {fileID: 5360738344046307764}
   m_PrefabAsset: {fileID: 0}
