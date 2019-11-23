@@ -29,10 +29,14 @@ public class PlayerController : MonoBehaviour
     private GameObject holdingThrowable;
 
     private int wallLayer;
+    private int playerLayer;
+
+    private Collider[] overlapResult = new Collider[10];
 
     private void Awake()
     {
         wallLayer = LayerMask.GetMask("Default", "Throwable");
+        playerLayer = LayerMask.GetMask("Player");
     }
 
     // Start is called before the first frame update
@@ -195,6 +199,11 @@ public class PlayerController : MonoBehaviour
             holdingThrowable = null;
         }
     }
+
+    public bool CanDrop()
+    {
+        return marker.activeInHierarchy;
+    }
     #endregion
 
     void UpdateMarker()
@@ -216,7 +225,43 @@ public class PlayerController : MonoBehaviour
         {
             position.x = Mathf.Floor(position.x) - 0.5f;
         }
+
+        // Check if should we move another step so that the box would not overlap the player collider
+        int overlapCount = Physics.OverlapBoxNonAlloc(position, new Vector3(0.5f, 1.0f, 1.0f), overlapResult, Quaternion.identity, playerLayer);
+        if (overlapCount > 0)
+        {
+            if (IsFacingRight)
+            {
+                position.x += 1.0f;
+            }
+            else
+            {
+                position.x -= 1.0f;
+            }
+        }
+
         marker.transform.position = position;
+
+        ValidateMarkerPosition();
+    }
+
+    void ValidateMarkerPosition()
+    {
+        // Check if there is any tiles on top of the marker
+        Vector3 markerPosition = marker.transform.position;
+
+        Ray tileCheckRay = new Ray(markerPosition + Vector3.down * 0.1f, Vector3.up);
+        if (Physics.Raycast(tileCheckRay, 0.3f, wallLayer))
+        {
+            marker.SetActive(false);
+        }
+
+        // Check if there is any wall in the desired position
+        //int overlapCount = Physics.OverlapBoxNonAlloc(markerPosition, new Vector3(1.2f, 0.2f, 1.0f), overlapResult, Quaternion.identity, wallLayer);
+        //if (overlapCount > 0)
+        //{
+        //    marker.SetActive(false);
+        //}
     }
 }
 
