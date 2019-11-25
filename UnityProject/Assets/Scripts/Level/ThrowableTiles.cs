@@ -14,10 +14,13 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
     private Collider col;
     private Rigidbody rb;
 
+    private bool shouldSnap;
+
     private void Awake()
     {
         col = GetComponent<Collider>();
         rb = GetComponent<Rigidbody>();
+
         OnDrop();
     }
 
@@ -36,6 +39,7 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
     {
         col.isTrigger = true;
         rb.constraints = RigidbodyConstraints.FreezeAll;
+        shouldSnap = true;
     }
 
     public void OnThrow(Vector3 direction, float force)
@@ -45,6 +49,8 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
 
         rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
         rb.AddForce(direction * force, ForceMode.Impulse);
+
+        shouldSnap = true;
     }
 
     private IEnumerator SwitchOffTrigger(float after)

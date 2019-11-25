@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Rigidbody body;
 
+    public GameObject marker;
+
     private PlayerState movementState;
     private PlayerState upperBodyState;
 
@@ -27,10 +29,14 @@ public class PlayerController : MonoBehaviour
     private GameObject holdingThrowable;
 
     private int wallLayer;
+    private int playerLayer;
+
+    private Collider[] overlapResult = new Collider[10];
 
     private void Awake()
     {
         wallLayer = LayerMask.GetMask("Default", "Throwable");
+        playerLayer = LayerMask.GetMask("Player");
     }
 
     // Start is called before the first frame update
@@ -38,11 +44,14 @@ public class PlayerController : MonoBehaviour
     {
         ChangeMovementState(PlayerState.GetStateObject<IdleState>());
         ChangeUpperBodyState(PlayerState.GetStateObject<UnequipedState>());
+
+        marker.transform.SetParent(null);
     }
 
     private void Update()
     {
         DetectThrowable();
+        UpdateMarker();
 
         movementState.Update(this);
         upperBodyState.Update(this);
@@ -183,20 +192,76 @@ public class PlayerController : MonoBehaviour
         {
             holdingThrowable.transform.SetParent(null);
 
-            Vector3 facingDirection = Vector3.right;
-            if (!IsFacingRight)
-            {
-                facingDirection = -Vector3.right;
-            }
-
-            holdingThrowable.transform.position = transform.position;
-            holdingThrowable.transform.position += facingDirection;
+            holdingThrowable.transform.position = new Vector3(marker.transform.position.x, holdingThrowable.transform.position.y);
 
             holdingThrowable.GetComponent<IThrowableTile>().OnDrop();
 
             holdingThrowable = null;
         }
     }
+
+    public bool CanDrop()
+    {
+        return marker.activeInHierarchy;
+    }
     #endregion
+
+    void UpdateMarker()
+    {
+        if (holdingThrowable == null)
+        {
+            marker.SetActive(false);
+            return;
+        }
+
+        marker.SetActive(true);
+
+        Vector3 position = transform.position;
+        if (IsFacingRight)
+        {
+            position.x = Mathf.Ceil(position.x) + 0.5f;
+        }
+        else
+        {
+            position.x = Mathf.Floor(position.x) - 0.5f;
+        }
+
+        // Check if should we move another step so that the box would not overlap the player collider
+        int overlapCount = Physics.OverlapBoxNonAlloc(position, new Vector3(0.5f, 1.0f, 1.0f), overlapResult, Quaternion.identity, playerLayer);
+        if (overlapCount > 0)
+        {
+            if (IsFacingRight)
+            {
+                position.x += 1.0f;
+            }
+            else
+            {
+                position.x -= 1.0f;
+            }
+        }
+
+        marker.transform.position = position;
+
+        ValidateMarkerPosition();
+    }
+
+    void ValidateMarkerPosition()
+    {
+        // Check if there is any tiles on top of the marker
+        Vector3 markerPosition = marker.transform.position;
+
+        Ray tileCheckRay = new Ray(markerPosition + Vector3.down * 0.1f, Vector3.up);
+        if (Physics.Raycast(tileCheckRay, 0.3f, wallLayer))
+        {
+            marker.SetActive(false);
+        }
+
+        // Check if there is any wall in the desired position
+        //int overlapCount = Physics.OverlapBoxNonAlloc(markerPosition, new Vector3(1.2f, 0.2f, 1.0f), overlapResult, Quaternion.identity, wallLayer);
+        //if (overlapCount > 0)
+        //{
+        //    marker.SetActive(false);
+        //}
+    }
 }
 

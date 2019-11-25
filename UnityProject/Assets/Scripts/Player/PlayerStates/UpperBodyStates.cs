@@ -35,8 +35,11 @@ public class PickupState : PlayerState
 
         if (Input.GetButtonDown("Use"))
         {
-            player.Drop();
-            player.ChangeUpperBodyState(PlayerState.GetStateObject<UnequipedState>());
+            if (player.CanDrop())
+            {
+                player.Drop();
+                player.ChangeUpperBodyState(PlayerState.GetStateObject<UnequipedState>());
+            }
         }
     }
 }
