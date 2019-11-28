@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 2787992047670722547}
   - component: {fileID: 7372375127129852634}
   - component: {fileID: 4210541622000500882}
+  - component: {fileID: -7138821329393935861}
+  - component: {fileID: -5214987736102722740}
+  - component: {fileID: -1686143391654786372}
   m_Layer: 0
   m_Name: EnemyProjectile
   m_TagString: Untagged
@@ -91,3 +94,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7138821329393935861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088466336324463161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1f9b0ceefdb4047984efd29342100e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5214987736102722740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088466336324463161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de75cc4aa39e5df4da36fe2af1c7c8f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 3
+--- !u!54 &-1686143391654786372
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088466336324463161}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyStat : MonoBehaviour, IDamagable
 {
-    [SerializeField] float health;
-    [SerializeField] float damage;
+    public float health;
+    public float damage;
 
     private float currentHealth;
 

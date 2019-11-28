@@ -18,7 +18,9 @@ public class EnemyMovement : EnemyBehavior
     {
         while (true)
         {
+            Vector3 previousPos = transform.position;
             transform.position = new Vector3(Mathf.Cos(Time.time * movementSpeed) * moveMagnitude, transform.position.y, 0) ;
+            transform.forward = (transform.position - previousPos).normalized;
             yield return new WaitForEndOfFrame();
         }
     }
