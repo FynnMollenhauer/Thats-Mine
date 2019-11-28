@@ -5,6 +5,7 @@ public class EnemyMovement : EnemyBehavior
 {
     [Header("Movement stats")]
     [SerializeField] float moveMagnitude;
+    [SerializeField] float movementSpeed;
 
     protected override void Start()
     {
@@ -17,7 +18,7 @@ public class EnemyMovement : EnemyBehavior
     {
         while (true)
         {
-            transform.position = new Vector3(Mathf.Cos(Time.time * Stat.MovementSpeed) * moveMagnitude, transform.position.y, 0) ;
+            transform.position = new Vector3(Mathf.Cos(Time.time * movementSpeed) * moveMagnitude, transform.position.y, 0) ;
             yield return new WaitForEndOfFrame();
         }
     }

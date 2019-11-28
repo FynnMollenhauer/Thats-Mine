@@ -5,11 +5,7 @@ using UnityEngine;
 public class EnemyStat : MonoBehaviour, IDamagable
 {
     [SerializeField] float health;
-    [SerializeField] float movementSpeed;
     [SerializeField] float damage;
-
-    public float Health { get { return health; } }
-    public float MovementSpeed { get { return movementSpeed; } }
 
     private float currentHealth;
 
