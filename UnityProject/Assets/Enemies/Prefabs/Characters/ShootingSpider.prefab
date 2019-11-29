@@ -27,7 +27,7 @@ PrefabInstance:
     - target: {fileID: 8952649543212764480, guid: 19b4e2367cff98946bfcd64b5d311601,
         type: 3}
       propertyPath: m_Name
-      value: CeilingCrawler
+      value: ShootingSpider
       objectReference: {fileID: 0}
     - target: {fileID: 4182427287100725619, guid: 19b4e2367cff98946bfcd64b5d311601,
         type: 3}
@@ -93,6 +93,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3344015172648977946, guid: 19b4e2367cff98946bfcd64b5d311601,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b4e2367cff98946bfcd64b5d311601, type: 3}
