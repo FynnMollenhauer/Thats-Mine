@@ -19,11 +19,8 @@ public class EnemyProjectile : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             collision.gameObject.GetComponent<IDamagable>().Damage(DamageInfo);
-            gameObject.Despawn();
         }
-        else
-        {
-            gameObject.Despawn();
-        }
+
+        gameObject.Despawn();
     }
 }
