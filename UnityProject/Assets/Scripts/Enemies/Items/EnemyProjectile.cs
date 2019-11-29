@@ -21,5 +21,9 @@ public class EnemyProjectile : MonoBehaviour
             collision.gameObject.GetComponent<IDamagable>().Damage(DamageInfo);
             gameObject.Despawn();
         }
+        else
+        {
+            gameObject.Despawn();
+        }
     }
 }
