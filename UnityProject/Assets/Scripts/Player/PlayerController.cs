@@ -104,10 +104,13 @@ public class PlayerController : MonoBehaviour, IDamagable
 
         // Check collision in the desired direction and stop if needed
         // to prevent weird physics problems
-        if (!Physics.Raycast(transform.position + 0 * Vector3.up, forward, wallStoppingDistance, wallLayer) &&
-            !Physics.Raycast(transform.position + 1 * Vector3.up, forward, wallStoppingDistance, wallLayer) &&
-            !Physics.Raycast(transform.position + 2 * Vector3.up, forward, wallStoppingDistance, wallLayer))
+        bool raycast0 = Physics.Raycast(transform.position + 0.1f * Vector3.up, forward, wallStoppingDistance, wallLayer);
+        bool raycast1 = Physics.Raycast(transform.position + 1.0f * Vector3.up, forward, wallStoppingDistance, wallLayer);
+        bool raycast2 = Physics.Raycast(transform.position + 1.9f * Vector3.up, forward, wallStoppingDistance, wallLayer);
+        if (!raycast0 && !raycast1 && !raycast2)
             transform.position += forward * movementSpeed * Time.deltaTime;
+        //else
+        //    Debug.LogFormat("Cannot move: Raycast 0: {0}, Raycast 1: {1}, Raycast 2: {2}", raycast0, raycast1, raycast2);
     }
 
     private bool IsFacingRight
