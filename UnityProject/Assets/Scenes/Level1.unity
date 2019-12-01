@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: fae4fc3b7abec4414b40c7c02dfbfa65
+  m_OcclusionCullingData: {fileID: 36300000, guid: bcb9484e77c8a488bb39fd2df98c277a,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -1777,6 +1778,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -1786,11 +1792,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -3665,6 +3666,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -3679,11 +3685,6 @@ PrefabInstance:
         type: 3}
       propertyPath: health
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -9207,6 +9208,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -9221,11 +9227,6 @@ PrefabInstance:
         type: 3}
       propertyPath: health
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -12310,6 +12311,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -12319,11 +12325,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -13416,6 +13417,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -13425,11 +13431,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -14746,6 +14747,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -14755,11 +14761,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -15075,6 +15076,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -15084,11 +15090,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -33122,6 +33123,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -33131,11 +33137,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -35335,6 +35336,48 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039668325}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1039747798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039747800}
+  - component: {fileID: 1039747799}
+  m_Layer: 0
+  m_Name: Occlusion Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!192 &1039747799
+OcclusionArea:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039747798}
+  serializedVersion: 2
+  m_Size: {x: 135.69, y: 115.4267, z: 1}
+  m_Center: {x: -41.67203, y: -2.2079315, z: 0}
+  m_IsViewVolume: 1
+--- !u!4 &1039747800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039747798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 105.443954, y: -48.23472, z: -2136.8438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1041685637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36129,6 +36172,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -36143,11 +36191,6 @@ PrefabInstance:
         type: 3}
       propertyPath: health
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -37071,7 +37114,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 30
   field of view: 60
   orthographic: 1
   orthographic size: 6.5
@@ -45050,6 +45093,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -45059,11 +45107,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -46972,6 +47015,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -46981,11 +47029,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -49434,6 +49477,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -49443,11 +49491,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -50262,6 +50305,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -50276,11 +50324,6 @@ PrefabInstance:
         type: 3}
       propertyPath: health
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -51019,6 +51062,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -51033,11 +51081,6 @@ PrefabInstance:
         type: 3}
       propertyPath: health
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -53483,6 +53526,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -53497,11 +53545,6 @@ PrefabInstance:
         type: 3}
       propertyPath: health
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -56504,6 +56547,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -56513,11 +56561,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -59769,6 +59812,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -59778,11 +59826,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -69801,6 +69844,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: moveMagnitude
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: fireIntervalMin
@@ -69810,11 +69858,6 @@ PrefabInstance:
         type: 3}
       propertyPath: fireIntervalMax
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: moveMagnitude
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
