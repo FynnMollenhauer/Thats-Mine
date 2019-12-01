@@ -105,8 +105,8 @@ public class PlayerController : MonoBehaviour, IDamagable
         // Check collision in the desired direction and stop if needed
         // to prevent weird physics problems
         bool raycast0 = Physics.Raycast(transform.position + 0.1f * Vector3.up, forward, wallStoppingDistance, wallLayer);
-        bool raycast1 = Physics.Raycast(transform.position + 1.0f * Vector3.up, forward, wallStoppingDistance, wallLayer);
-        bool raycast2 = Physics.Raycast(transform.position + 1.9f * Vector3.up, forward, wallStoppingDistance, wallLayer);
+        bool raycast1 = Physics.Raycast(transform.position + 0.5f * Vector3.up, forward, wallStoppingDistance, wallLayer);
+        bool raycast2 = Physics.Raycast(transform.position + 0.9f * Vector3.up, forward, wallStoppingDistance, wallLayer);
         if (!raycast0 && !raycast1 && !raycast2)
             transform.position += forward * movementSpeed * Time.deltaTime;
         //else

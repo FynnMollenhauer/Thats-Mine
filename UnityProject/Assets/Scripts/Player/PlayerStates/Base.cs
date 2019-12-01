@@ -22,6 +22,7 @@ public abstract class PlayerState : IPlayerState
         new IdleState(),
         new WalkState(),
         new JumpState(),
+        new FallState(),
 
         new UnequipedState(),
         new PickupState()
