@@ -16,7 +16,7 @@ public class IdleState : PlayerState
             return;
         }
 
-        if (!player.animator.GetBool("IsJumping") && player.body.velocity.y < -0.05f)
+        if (!player.animator.GetBool("IsJumping") && player.body.velocity.y < -0.15f)
         {
             player.ChangeMovementState(GetStateObject<FallState>());
             return;
@@ -115,6 +115,7 @@ public class FallState : PlayerState
             player.ChangeMovementState(GetStateObject<IdleState>());
             return;
         }
+        player.MovePlayer(InputHelper.GetMovement());
     }
 
     public override void OnEnter(PlayerController player)

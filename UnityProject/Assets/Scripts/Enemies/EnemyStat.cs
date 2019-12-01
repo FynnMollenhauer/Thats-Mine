@@ -31,7 +31,8 @@ public class EnemyStat : MonoBehaviour, IDamagable
     {
         if (col.gameObject.layer == LayerMask.NameToLayer("Throwable"))
         {
-            Damage(new DamageInfo() { damage = 1 });
+            // Damage(new DamageInfo() { damage = 1 });
+
         }
         else if (col.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
