@@ -16,7 +16,7 @@ public class IdleState : PlayerState
             return;
         }
 
-        if (!player.animator.GetBool("IsJumping") && player.body.velocity.y < 0)
+        if (!player.animator.GetBool("IsJumping") && player.body.velocity.y < -0.05f)
         {
             player.ChangeMovementState(GetStateObject<FallState>());
             return;
