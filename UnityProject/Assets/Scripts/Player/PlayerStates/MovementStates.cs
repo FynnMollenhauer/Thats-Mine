@@ -15,6 +15,12 @@ public class IdleState : PlayerState
             player.ChangeMovementState(GetStateObject<JumpState>());
             return;
         }
+
+        if (!player.animator.GetBool("IsJumping") && player.body.velocity.y < -0.15f)
+        {
+            player.ChangeMovementState(GetStateObject<FallState>());
+            return;
+        }
     }
 
     public override void OnEnter(PlayerController player)
@@ -23,6 +29,7 @@ public class IdleState : PlayerState
 
         player.animator.SetFloat("Forward", 0);
         player.animator.SetBool("IsJumping", false);
+        player.animator.SetBool("IsFalling", false);
     }
 
     public override void OnExit(PlayerController player)
@@ -93,5 +100,33 @@ public class JumpState : PlayerState
     {
         player.animator.SetBool("IsJumping", false);
         player.body.velocity = Vector3.zero;
+    }
+}
+
+
+
+public class FallState : PlayerState
+{
+    public override void Update(PlayerController player)
+    {
+        
+        if (player.body.velocity.magnitude < 0.05f)
+        {
+            player.ChangeMovementState(GetStateObject<IdleState>());
+            return;
+        }
+        player.MovePlayer(InputHelper.GetMovement());
+    }
+
+    public override void OnEnter(PlayerController player)
+    {
+        base.OnEnter(player);
+
+        player.animator.SetBool("IsFalling", true);
+    }
+
+    public override void OnExit(PlayerController player)
+    {
+        player.animator.SetBool("IsFalling", false);
     }
 }

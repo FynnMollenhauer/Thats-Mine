@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamagable
 {
     [Header("Player attributes")]
+    public float health;
     public float movementSpeed = 4.0f;
     public float jumpHeight = 2.5f;
     public float rotateRate = 450.0f;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private int playerLayer;
 
     private Collider[] overlapResult = new Collider[10];
+    private float currentHealth;
 
     private void Awake()
     {
@@ -46,6 +48,8 @@ public class PlayerController : MonoBehaviour
         ChangeUpperBodyState(PlayerState.GetStateObject<UnequipedState>());
 
         marker.transform.SetParent(null);
+
+        currentHealth = health;
     }
 
     private void Update()
@@ -100,10 +104,13 @@ public class PlayerController : MonoBehaviour
 
         // Check collision in the desired direction and stop if needed
         // to prevent weird physics problems
-        if (!Physics.Raycast(transform.position + 0 * Vector3.up, forward, wallStoppingDistance, wallLayer) &&
-            !Physics.Raycast(transform.position + 1 * Vector3.up, forward, wallStoppingDistance, wallLayer) &&
-            !Physics.Raycast(transform.position + 2 * Vector3.up, forward, wallStoppingDistance, wallLayer))
+        bool raycast0 = Physics.Raycast(transform.position + 0.1f * Vector3.up, forward, wallStoppingDistance, wallLayer);
+        bool raycast1 = Physics.Raycast(transform.position + 0.5f * Vector3.up, forward, wallStoppingDistance, wallLayer);
+        bool raycast2 = Physics.Raycast(transform.position + 0.9f * Vector3.up, forward, wallStoppingDistance, wallLayer);
+        if (!raycast0 && !raycast1 && !raycast2)
             transform.position += forward * movementSpeed * Time.deltaTime;
+        //else
+        //    Debug.LogFormat("Cannot move: Raycast 0: {0}, Raycast 1: {1}, Raycast 2: {2}", raycast0, raycast1, raycast2);
     }
 
     private bool IsFacingRight
@@ -262,6 +269,19 @@ public class PlayerController : MonoBehaviour
         //{
         //    marker.SetActive(false);
         //}
+    }
+
+    public void Damage(DamageInfo damageInfo)
+    {
+        currentHealth -= damageInfo.damage;
+
+        if (currentHealth <= 0)
+            Die();
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 }
 

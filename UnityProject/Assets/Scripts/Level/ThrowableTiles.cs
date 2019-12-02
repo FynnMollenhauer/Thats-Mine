@@ -47,6 +47,7 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
         StopAllCoroutines();
         StartCoroutine(SwitchOffTrigger(0.5f));
 
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
         rb.AddForce(direction * force, ForceMode.Impulse);
 
