@@ -144,15 +144,22 @@ public class PlayerController : MonoBehaviour, IDamagable
             return;
         }
 
-        Collider[] cols = Physics.OverlapSphere(transform.position, throwableDetectionRadius, LayerMask.GetMask("Throwable"));
-        if (cols.Length > 0)
+        RaycastHit hitInfo;
+        bool firstChoiceAvailable = Physics.Raycast(transform.position + Vector3.up * 0.5f, IsFacingRight ? Vector3.right : Vector3.left, out hitInfo, throwableDetectionRadius, LayerMask.GetMask("Throwable"));
+        if (firstChoiceAvailable)
         {
-            nearbyThrowable = cols[0].gameObject;
+            nearbyThrowable = hitInfo.collider.gameObject;
+            return;
         }
-        else
+
+        bool secondChoiceAvailable = Physics.Raycast(transform.position - Vector3.up * 0.5f, IsFacingRight ? Vector3.right : Vector3.left, out hitInfo, throwableDetectionRadius, LayerMask.GetMask("Throwable"));
+        if (secondChoiceAvailable)
         {
-            nearbyThrowable = null;
+            nearbyThrowable = hitInfo.collider.gameObject;
+            return;
         }
+
+        nearbyThrowable = null;
     }
 
     public bool Pickup()
