@@ -24,6 +24,7 @@ public class EnemyIntervalFiring : EnemyBehavior
         projectile.Direction = transform.forward;
         projectile.Speed = projectileSpeed;
         projectile.DamageInfo = new DamageInfo() { damage = Stat.damage };
+        projectile.Owner = gameObject;
 
         firingCountdown = Random.Range(fireIntervalMin, fireIntervalMax);        
     }
