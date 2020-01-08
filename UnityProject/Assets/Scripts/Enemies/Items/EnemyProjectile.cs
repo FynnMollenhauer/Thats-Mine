@@ -13,6 +13,7 @@ public class EnemyProjectile : MonoBehaviour
     void Update()
     {
         transform.position += Direction * Speed * Time.deltaTime;
+        transform.forward = Direction;
     }
 
     private void OnCollisionEnter(Collision collision)

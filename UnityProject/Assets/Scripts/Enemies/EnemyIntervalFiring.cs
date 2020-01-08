@@ -9,6 +9,8 @@ public class EnemyIntervalFiring : EnemyBehavior
     [SerializeField] float fireIntervalMax;
     [SerializeField] float projectileSpeed;
 
+    public bool shootHorizontally = true;
+
     float firingCountdown = -1;
 
     private void Update()
@@ -21,7 +23,7 @@ public class EnemyIntervalFiring : EnemyBehavior
 
         GameObject projInstance = projectilePrefab.Spawn(transform.position);
         EnemyProjectile projectile = projInstance.GetComponent<EnemyProjectile>();
-        projectile.Direction = transform.forward;
+        projectile.Direction = shootHorizontally ? transform.forward : Vector3.down;
         projectile.Speed = projectileSpeed;
         projectile.DamageInfo = new DamageInfo() { damage = Stat.damage };
         projectile.Owner = gameObject;
