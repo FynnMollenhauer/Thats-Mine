@@ -3676,15 +3676,15 @@ PrefabInstance:
       propertyPath: fireIntervalMax
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: health
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -9218,15 +9218,15 @@ PrefabInstance:
       propertyPath: fireIntervalMax
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: health
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -16456,6 +16456,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: doesMoveOnCeiling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: timeOnFloorOrCeiling
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005014751638523067, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -36182,15 +36197,15 @@ PrefabInstance:
       propertyPath: fireIntervalMax
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: health
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -49253,6 +49268,16 @@ PrefabInstance:
       propertyPath: moveMagnitude
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: doesMoveOnCeiling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: timeOnFloorOrCeiling
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
 --- !u!1001 &1470189723
@@ -50240,15 +50265,15 @@ PrefabInstance:
       propertyPath: fireIntervalMax
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: health
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -50997,15 +51022,15 @@ PrefabInstance:
       propertyPath: fireIntervalMax
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: health
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -53461,15 +53486,15 @@ PrefabInstance:
       propertyPath: fireIntervalMax
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: health
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2194884651531783549, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}

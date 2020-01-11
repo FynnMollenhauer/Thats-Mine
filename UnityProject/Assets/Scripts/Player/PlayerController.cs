@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour, IDamagable
     {
         wallLayer = LayerMask.GetMask("Default", "Throwable");
         playerLayer = LayerMask.GetMask("Player");
+
+        GUIManager.Instance.screenManager.SetScreen(GameScreen.Gameplay);
     }
 
     // Start is called before the first frame update
