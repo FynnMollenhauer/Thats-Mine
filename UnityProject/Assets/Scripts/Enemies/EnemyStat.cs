@@ -33,7 +33,15 @@ public class EnemyStat : MonoBehaviour, IDamagable
         {
             if (col.gameObject.GetComponent<Rigidbody>().velocity.sqrMagnitude > 0.1f)
             {
-                Damage(new DamageInfo() { damage = 1 });
+                if (col.gameObject.tag == "SpikedTile")
+                {
+                    Damage(new DamageInfo() { damage = 2 });
+                }
+
+                else
+                {
+                    Damage(new DamageInfo() { damage = 1 });
+                }
             }
 
         }

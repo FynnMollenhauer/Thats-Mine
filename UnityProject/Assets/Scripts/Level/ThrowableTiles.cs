@@ -16,6 +16,10 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
 
     private bool shouldSnap;
 
+    public int damage;
+
+    private bool isPickedUp;
+
     private void Awake()
     {
         col = GetComponent<Collider>();
@@ -33,6 +37,7 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
     {
         col.isTrigger = false;
         rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
+        isPickedUp = false;
     }
 
     public void OnPickUp()
@@ -40,6 +45,7 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
         col.isTrigger = true;
         rb.constraints = RigidbodyConstraints.FreezeAll;
         shouldSnap = true;
+        isPickedUp = true;
     }
 
     public void OnThrow(Vector3 direction, float force)
@@ -52,6 +58,7 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
         rb.AddForce(direction * force, ForceMode.Impulse);
 
         shouldSnap = true;
+        isPickedUp = false;
     }
 
     private IEnumerator SwitchOffTrigger(float after)
@@ -59,5 +66,13 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
         yield return new WaitForSeconds(after);
 
         col.isTrigger = false;
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (tag == "SpikedTile" && col.gameObject.layer == LayerMask.NameToLayer("Player") && GetComponent<Rigidbody>().velocity.sqrMagnitude < 0.1f && isPickedUp == false)
+        {
+            col.gameObject.GetComponent<IDamagable>().Damage(new DamageInfo() { damage = this.damage });
+        }
     }
 }
