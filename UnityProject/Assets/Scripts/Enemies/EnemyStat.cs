@@ -11,7 +11,7 @@ public class EnemyStat : MonoBehaviour, IDamagable
 
     void Start()
     {
-        currentHealth -= health;
+        currentHealth = health;
     }
 
     public void Damage(DamageInfo damageInfo)

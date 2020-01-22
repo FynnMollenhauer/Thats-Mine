@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - SpikedTile
+  - FallingTile
   layers:
   - Default
   - TransparentFX

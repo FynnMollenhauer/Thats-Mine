@@ -18,6 +18,11 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
 
     public int damage;
 
+    public bool isTreasure;
+    public GameObject gem;
+
+    public float raycastDistance;
+
     private bool isPickedUp;
 
     private void Awake()
@@ -31,6 +36,13 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
     private void FixedUpdate()
     {
         transform.rotation = Quaternion.identity;
+
+        int layerMask = 1 << 8;
+
+        if ( tag == "FallingTile" && Physics.Raycast(transform.position, -Vector3.up, raycastDistance, layerMask))
+        {
+                gameObject.GetComponent<Rigidbody>().useGravity = true;
+        }
     }
 
     public void OnDrop()
@@ -73,6 +85,22 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
         if (tag == "SpikedTile" && col.gameObject.layer == LayerMask.NameToLayer("Player") && GetComponent<Rigidbody>().velocity.sqrMagnitude < 0.1f && isPickedUp == false)
         {
             col.gameObject.GetComponent<IDamagable>().Damage(new DamageInfo() { damage = this.damage });
+        }
+
+        else if (tag == "FallingTile" && col.gameObject.layer == LayerMask.NameToLayer("Player") && GetComponent<Rigidbody>().velocity.sqrMagnitude > 0.1f && isPickedUp == false)
+        {
+            col.gameObject.GetComponent<IDamagable>().Damage(new DamageInfo() { damage = this.damage });
+        }
+
+        else if (isTreasure == true && col.gameObject.layer != LayerMask.NameToLayer("Player") && GetComponent<Rigidbody>().velocity.sqrMagnitude > 0.1f)
+        {
+            Instantiate(gem, transform.position, Quaternion.identity);
+            Instantiate(gem, transform.position, Quaternion.identity);
+            Instantiate(gem, transform.position, Quaternion.identity);
+            Instantiate(gem, transform.position, Quaternion.identity);
+            Instantiate(gem, transform.position, Quaternion.identity);
+
+            gameObject.SetActive(false);
         }
     }
 }
