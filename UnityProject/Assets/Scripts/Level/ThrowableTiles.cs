@@ -87,7 +87,7 @@ public class ThrowableTiles : MonoBehaviour, IThrowableTile
             col.gameObject.GetComponent<IDamagable>().Damage(new DamageInfo() { damage = this.damage });
         }
 
-        else if (tag == "FallingTile" && col.gameObject.layer == LayerMask.NameToLayer("Player") && GetComponent<Rigidbody>().velocity.sqrMagnitude > 0.1f && isPickedUp == false)
+        else if (tag == "FallingTile" && col.gameObject.layer == LayerMask.NameToLayer("Player") && GetComponent<Rigidbody>().velocity.sqrMagnitude > 1.0f && isPickedUp == false)
         {
             col.gameObject.GetComponent<IDamagable>().Damage(new DamageInfo() { damage = this.damage });
         }

@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4cf4112d5994f419cb1f837ef84db7c6, type: 2}
+  - {fileID: 2100000, guid: d7c83a9bbdf00324b803ae1daa2ef005, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,3 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110f89cc4618d6741864d8ff14377269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
+  isTreasure: 0
+  gem: {fileID: 0}
+  raycastDistance: 0
