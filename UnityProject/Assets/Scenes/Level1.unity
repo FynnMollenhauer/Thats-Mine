@@ -4384,16 +4384,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -4403,6 +4393,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -7801,6 +7801,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &183913146 stripped
@@ -7966,6 +7977,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &184620345 stripped
@@ -11840,6 +11862,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &260172287 stripped
@@ -11999,16 +12032,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -12018,6 +12041,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -16155,16 +16188,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -16174,6 +16197,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -18002,16 +18035,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -18021,6 +18044,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -19737,16 +19770,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -19756,6 +19779,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -20313,16 +20346,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -20332,6 +20355,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -22080,11 +22113,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 9005014751638523067, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -22099,6 +22127,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeOnFloorOrCeiling
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005014751638523067, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -41215,6 +41248,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &832191884 stripped
@@ -51001,16 +51045,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -51020,6 +51054,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -52162,6 +52206,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &997459713 stripped
@@ -55368,16 +55423,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -55387,6 +55432,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -62762,6 +62817,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1225435681 stripped
@@ -63319,6 +63385,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1234778790 stripped
@@ -67862,16 +67939,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -67881,6 +67948,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -69337,6 +69414,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1354566633 stripped
@@ -70447,16 +70535,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -70466,6 +70544,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -74614,16 +74702,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -74633,6 +74711,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -75855,16 +75943,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -75874,6 +75952,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -76619,6 +76707,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1509971232 stripped
@@ -76928,16 +77027,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -76947,6 +77036,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -80046,16 +80145,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -80065,6 +80154,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -82322,6 +82421,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1634013552 stripped
@@ -83418,6 +83528,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1654287437 stripped
@@ -83498,16 +83619,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -83517,6 +83628,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -89011,16 +89132,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -89030,6 +89141,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
@@ -92680,6 +92801,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1873333646 stripped
@@ -93244,6 +93376,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1889062898 stripped
@@ -93898,6 +94041,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &1894661056 stripped
@@ -99179,6 +99333,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &2003366157 stripped
@@ -100962,6 +101127,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55a512382d8a87e48bf3bb9092ecbf4e, type: 2}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 4623511490268773054, guid: 06cc23d187cb9472ca96db7c129c5843,
+        type: 3}
+    - target: {fileID: 4123650598725429318, guid: 1f093c69b1d93431193f19f1b34a9bd7,
+        type: 3}
+      propertyPath: isTreasure
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f093c69b1d93431193f19f1b34a9bd7, type: 3}
 --- !u!4 &2037993730 stripped
@@ -101886,16 +102062,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMin
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
-        type: 3}
-      propertyPath: fireIntervalMax
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5873063131891821522, guid: afe1600ba94be2d4f875b7256ae97805,
         type: 3}
       propertyPath: health
@@ -101905,6 +102071,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveMagnitude
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMin
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7910934285761586840, guid: afe1600ba94be2d4f875b7256ae97805,
+        type: 3}
+      propertyPath: fireIntervalMax
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe1600ba94be2d4f875b7256ae97805, type: 3}
